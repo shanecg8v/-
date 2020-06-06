@@ -1,0 +1,44 @@
+.header {
+    height: 800px;
+    font-weight: bold;
+
+    .nav {
+        padding-top: 32px;
+    }
+
+    .logo {
+        padding-bottom: 10px;
+    }
+
+    .nav-link {
+        color: black;
+        padding: 6px 0;
+    }
+
+    .nav-item {
+        padding-left: 32px;
+        margin-bottom: 26px;
+    }
+
+    .active {
+        padding-left: 28px;
+        border-left: 4px solid $secondary;
+
+        .nav-link {
+            color: $secondary;
+        }
+    }
+
+    .media {
+        margin-bottom: 32px;
+        padding-left: 32px;
+
+        .media-body {
+            margin-left: 16px;
+
+            .email {
+                font-size: 14px;
+            }
+        }
+    }
+}

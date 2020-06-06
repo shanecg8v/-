@@ -1,0 +1,256 @@
+---
+title: Admin
+layout: ./app/layout.ejs
+engine: ejs
+current: admin
+---
+
+<nav class="navbar navbar-expand-sm navbar-light w-100 py-4 px-0 mb-3">
+    <a class="navbar-brand font-weight-bolder mr-5" href="#">Admin</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item dropdown">
+            <a class="nav-link text-dark font-weight-bolder d-flex align-items-center px-0" href="#">
+                <span class="material-icons text-secondary ml-2">
+                    add
+                </span>
+                Add New Admin
+            </a>
+        </li>
+    </ul>
+    <ul class="navbar-nav mt-2 mt-lg-0">
+        <li class="nav-item mr-3">
+            <a class="nav-link text-dark" href="#"><span class="material-icons">
+                    search
+                </span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark px-0" href="#"><span class="material-icons">
+                    notifications_active
+                </span></a>
+        </li>
+    </ul>
+</nav>
+
+<section class="admin">
+    <table class="table table-hover mb-5">
+        <thead>
+            <tr class="font-weight-bold">
+                <th scope="col" class="d-flex align-items-center border-0">
+                    ID
+                    <span class="material-icons text-secondary">
+                        arrow_downward
+                    </span></th>
+                <th scope="col" class="border-0">Name</th>
+                <th scope="col" class="border-0">Email</th>
+                <th scope="col" class="border-0">Verified</th>
+                <th scope="col" class="border-0"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" class="border-dark">#1</th>
+                <td class="border-dark">Emir Wicks</td>
+                <td class="border-dark">emir.wicks@mail.com</td>
+                <td class="border-dark">Yes</td>
+                <td class="text-right border-dark">
+                    <span class="material-icons mr-4" data-toggle="modal" data-target="#viewModal">
+                        remove_red_eye
+                    </span>
+                    <span class="material-icons">
+                        create
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#2</th>
+                <td>Zaina Goldsmith</td>
+                <td>zaina.goldsmith@mail.com</td>
+                <td>Yes</td>
+                <td class="text-right">
+                    <span class="material-icons mr-4" data-toggle="modal" data-target="#viewModal">
+                        remove_red_eye
+                    </span>
+                    <span class="material-icons">
+                        create
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#3</th>
+                <td>Mahima Lopez</td>
+                <td>Mahima.Lopez@mail.com</td>
+                <td>Yes</td>
+                <td class="text-right">
+                    <span class="material-icons mr-4" data-toggle="modal" data-target="#viewModal">
+                        remove_red_eye
+                    </span>
+                    <span class="material-icons">
+                        create
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#4</th>
+                <td>Pharrell Murray</td>
+                <td>Pharrell.Murray@mail.com</td>
+                <td>Yes</td>
+                <td class="text-right">
+                    <span class="material-icons mr-4" data-toggle="modal" data-target="#viewModal">
+                        remove_red_eye
+                    </span>
+                    <span class="material-icons">
+                        create
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#5</th>
+                <td>Annika Mcbride</td>
+                <td>Annika.Mcbride@mail.com</td>
+                <td>Yes</td>
+                <td class="text-right">
+                    <span class="material-icons mr-4" data-toggle="modal" data-target="#viewModal">
+                        remove_red_eye
+                    </span>
+                    <span class="material-icons">
+                        create
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#6</th>
+                <td>Fatimah Clark</td>
+                <td>Fatimah.Clark@mail.com</td>
+                <td>Yes</td>
+                <td class="text-right">
+                    <span class="material-icons mr-4" data-toggle="modal" data-target="#viewModal">
+                        remove_red_eye
+                    </span>
+                    <span class="material-icons">
+                        create
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#7</th>
+                <td>Klaudia Rhodes</td>
+                <td>Klaudia.Rhodes@mail.com</td>
+                <td>Yes</td>
+                <td class="text-right">
+                    <span class="material-icons mr-4" data-toggle="modal" data-target="#viewModal">
+                        remove_red_eye
+                    </span>
+                    <span class="material-icons">
+                        create
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#8</th>
+                <td>Tillie Lucero</td>
+                <td>Tillie.Lucero@mail.com</td>
+                <td>Yes</td>
+                <td class="text-right">
+                    <span class="material-icons mr-4" data-toggle="modal" data-target="#viewModal">
+                        remove_red_eye
+                    </span>
+                    <span class="material-icons">
+                        create
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#9</th>
+                <td>Sabrina Stephenson</td>
+                <td>Sabrina.Stephenson@mail.com</td>
+                <td>Yes</td>
+                <td class="text-right">
+                    <span class="material-icons mr-4" data-toggle="modal" data-target="#viewModal">
+                        remove_red_eye
+                    </span>
+                    <span class="material-icons">
+                        create
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">#10</th>
+                <td>Annie Smith</td>
+                <td>Annie.Smith@mail.com</td>
+                <td>Yes</td>
+                <td class="text-right">
+                    <span class="material-icons mr-4" data-toggle="modal" data-target="#viewModal">
+                        remove_red_eye
+                    </span>
+                    <span class="material-icons">
+                        create
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-end">
+            <li class="page-item">
+                <a class="page-link" href="#">
+                    <span class="material-icons">
+                        chevron_left
+                    </span>
+                </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">
+                    <span class="material-icons ">
+                        chevron_right
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</section>
+
+<!-- ViewModal -->
+<div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="viewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body d-flex">
+                <img src="./assets/images/emir.jpeg" alt="" class="mr-4 img-fluid" width="141">
+                <div class="w-100">
+                    <p class="mb-0">#1
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </p>
+                    <p class="mb-0">Admin</p>
+                    <h4 class="mb-0 font-weight-bold h4">Emir Wicks</h4>
+                    <p class="mb-3"><small class="text-muted">emir.wicks@mail.com</small></p>
+                    <div class="d-flex align-items-center">
+                        <mark class="bg-primary">verified</mark>
+                        <span class="material-icons ml-auto text-secondary" data-toggle="collapse"
+                            href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            expand_more
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="collapseExample">
+                <div class="modal-footer border-top-0 pt-0 padding--2">
+                    <button type="button" class="btn btn-outline-danger padding__x--2 py-2"
+                        data-dismiss="modal">Deactivate</button>
+                    <button type="button" class="btn btn-secondary padding__x--2 py-2">Edit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.header ul li.active').removeClass('active');
+        $('.header ul li a[href="./admin.html"]').parent().addClass('active');
+    });
+</script>
