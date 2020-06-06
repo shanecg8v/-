@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <div class="container px-0">
+    <div class="row no-gutters">
+      <header class="col-3 header bg-primary d-flex flex-column justify-content-between">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <img class="logo" src="./assets/images/logo-ANSWER.svg" alt="">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex" href="#">
+              <i class="material-icons mr-2">
+                assessment
+              </i>
+              Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex" href="#">
+              <i class="material-icons mr-2">
+                question_answer
+              </i>
+              Question</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link d-flex" href="./index.html">
+              <i class="material-icons mr-2">
+                assignment
+              </i>
+              Assignment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex" href="#">
+              <i class="material-icons mr-2">
+                library_add_check
+              </i>
+              Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex" href="./admin.html">
+              <i class="material-icons mr-2">
+                group
+              </i>
+              Admin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex" href="#">
+              <i class="material-icons mr-2">
+                settings
+              </i>
+              Settings</a>
+          </li>
+        </ul>
+        </nav>
+        <div class="media d-flex align-items-center">
+          <div style="background-image: url(./assets/images/andychen.jpeg);" class="userImg"></div>
+          <div class="media-body">
+            <p class="mb-1">Andy Chen</p>
+            <p class="mb-0 text-muted email">andy0401@mail.com</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="col-9 pl-4">
+        <%- contents %>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
