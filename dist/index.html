@@ -15,9 +15,9 @@
 </head>
 
 <body>
-  <div class="container px-0">
+  <div class="container-fluid">
     <div class="row no-gutters">
-      <header class="col-3 header bg-primary d-flex flex-column justify-content-between">
+      <header class="col-3 header bg-primary d-flex flex-column justify-content-between vh-100">
         <ul class="nav flex-column">
           <li class="nav-item">
             <img class="logo" src="./assets/images/logo-ANSWER.svg" alt="">
@@ -107,13 +107,16 @@
 
 <section class="index row pl-3">
   <div class="col-5 pl-0">
-    <p class="font-weight-bold d-flex align-items-center p-0 mb-1" data-toggle="collapse" href="#allCollapse"
-      role="button" aria-expanded="false" aria-controls="allCollapse">All (4)
+    <button class="btn font-weight-bold d-flex align-items-center p-0 mb-1" id="allCollapse" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">All (4)
       <span class="material-icons text-secondary ml-2">
         expand_more
       </span>
-    </p>
-    <div class="collapse show " id="allCollapse">
+      <div class="dropdown-menu" aria-labelledby="allCollapse">
+        <a class="dropdown-item" href="#">裡面還是沒有驚喜</a>
+      </div>
+    </button>
+    <div class="collapse show ">
       <ul class="list-group">
         <li class="list-group-item px-3 bg-primary">
           <p class="d-flex justify-content-between mb-0">
@@ -173,7 +176,85 @@
         </span>
       </div>
       <div class="card-body pl-3">
-        <div class="card-title d-flex align-items-center">
+
+        <ul class="list-unstyled">
+          <li class="media">
+            <div style="background-image: url(./assets/images/emilywang.jpeg);" class="userImg"></div>
+            <div class="media-body">
+              <div class="d-flex justify-content-between w-100">
+                <p class="ml-2 mb-0 font-weight-bold">Andy Chen (You)<br />
+                  <small class="text-muted">13:24 AM (1 hours ago)</small>
+                </p>
+                <ul class="d-flex align-items-center mb-0 list-unstyled">
+                  <li>
+                    <span class="material-icons mr-4">
+                      star_border
+                    </span>
+                  </li>
+                  <li>
+                    <span class="material-icons">
+                      edit
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="border-bottom pb-3 mb-3 ml-2 media-text">
+                <p class="mb-3">
+                  Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the
+                  following
+                  code the height of the <mark class="bg-primary text-secondary">div</mark> is bigger than the height of
+                  the
+                  <mark class="bg-primary text-secondary">img</mark> ?
+                  There is a gap
+                  below the image, but it
+                  doesn’t seems to be a padding/margin.
+                  <br />What is the gap or extra space below image?
+                </p>
+                <button type="button" class="btn btn-primary d-flex align-items-center">
+                  <span class="material-icons">
+                    attach_file
+                  </span>
+                  HW-2-David.zip
+                </button>
+              </div>
+          </li>
+          <li class="media my-4">
+            <div style="background-image: url(./assets/images/andychen.jpeg);" class="userImg"></div>
+            <div class="media-body">
+              <div class="d-flex justify-content-between w-100">
+                <p class="ml-2 mb-0 font-weight-bold">Andy Chen (You)<br />
+                  <small class="text-muted">13:24 AM (1 hours ago)</small>
+                </p>
+                <ul class="d-flex align-items-center mb-0 list-unstyled">
+                  <li>
+                    <span class="material-icons mr-4">
+                      star_border
+                    </span>
+                  </li>
+                  <li>
+                    <span class="material-icons">
+                      edit
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="ml-2 media-text">
+                <p class="mb-0">
+                  Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a,
+                  b, c
+                  and d sit on. There is space below that line for the descenders you find on letters like g, j, p and
+                  q.<br /><br />
+                  You can:<br /><br />
+                  　• adjust the <mark class="bg-primary text-secondary">vertical-align</mark> of the image to position
+                  it
+                  elsewhere (e.g. the <mark class="bg-primary text-secondary">middle</mark> ) or<br />
+                  　• change the <mark class="bg-primary text-secondary">display</mark> so it isn’t inline.
+                </p>
+              </div>
+          </li>
+        </ul>
+
+        <!-- <div class="card-title d-flex align-items-center">
           <div style="background-image: url(./assets/images/emilywang.jpeg);" class="userImg"></div>
           <p class="ml-2 mb-0 font-weight-bold">Emily Wang<br /><small class="text-muted">10:38 AM (4 hours ago)</small>
           </p>
@@ -226,7 +307,7 @@
             elsewhere (e.g. the <mark class="bg-primary text-secondary">middle</mark> ) or<br />
             　• change the <mark class="bg-primary text-secondary">display</mark> so it isn’t inline.
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
 

@@ -8586,6 +8586,10 @@ body {
   font-size: 14px;
   line-height: 21px; }
 
+.index .media-text {
+  font-size: 14px;
+  line-height: 21px; }
+
 .admin .page-item.active .page-link {
   color: #fff;
   background-color: #2A8356;
